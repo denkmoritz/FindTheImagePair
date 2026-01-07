@@ -1,0 +1,56 @@
+site_name: Documentation
+
+repo_name: FindTheImagePair
+repo_url: https://github.com/denkmoritz/FindTheImagePair
+edit_uri: edit/main/documentation/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - search.share
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Quickstart: getting-started/quickstart.md
+  - Guide:
+      - Overview: guide/overview.md
+      - Dataset: guide/dataset.md
+      - Configuration: guide/configuration.md
+      - Advanced: guide/advanced.md
+  - Notebooks:
+      - Initial Table Generation: notebooks/initial_table.ipynb
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/denkmoritz
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: false
