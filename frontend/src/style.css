@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components {
+  .page-margins {
+    @apply mx-64;
+  }
+}
