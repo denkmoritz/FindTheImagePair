@@ -22,9 +22,7 @@ docker pull moritzdenk/postgis-global-streetscapes:latest
 ```bash
 docker run -d \
   --name postgis-global-streetscapes \
-  -e POSTGRES_DB=gis \
-  -e POSTGRES_USER=postgres \
+  -p 25433:5432 \
   -e POSTGRES_PASSWORD=postgres \
-  -p 25432:5432 \
-  moritzdenk/postgis-global-streetscapes:latest
+  denkmoritz/postgis-global-streetscapes:latest
 ```
