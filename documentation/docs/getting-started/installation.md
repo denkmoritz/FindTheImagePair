@@ -28,6 +28,7 @@ touch .env # MAPILLARY_TOKEN=<YOUR_API_KEY>
 ```bash
 cd backend
 python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -55,5 +56,5 @@ docker run -d \
   --name postgis-global-streetscapes \
   -p 25433:5432 \
   -e POSTGRES_PASSWORD=postgres \
-  denkmoritz/postgis-global-streetscapes:latest
+  moritzdenk/postgis-global-streetscapes:latest
 ```

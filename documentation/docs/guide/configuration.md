@@ -24,5 +24,5 @@ docker run -d \
   --name postgis-global-streetscapes \
   -p 25433:5432 \
   -e POSTGRES_PASSWORD=postgres \
-  denkmoritz/postgis-global-streetscapes:latest
+  moritzdenk/postgis-global-streetscapes:latest
 ```
