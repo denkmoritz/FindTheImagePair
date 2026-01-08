@@ -1,0 +1,14 @@
+pandas
+mapillary
+sqlalchemy
+fastapi
+psycopg
+matplotlib
+imagehash
+Pillow
+aiohttp
+tqdm
+opencv-python
+matplotlib
+uvicorn
+dotenv
