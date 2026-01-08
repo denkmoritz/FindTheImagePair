@@ -1,4 +1,4 @@
-# Welcome to *Image Finder*
+# Welcome to *Find The Image Pair*
 
 The goal of this project is to identify image pairs that share a similar visual appearance. For example, consider a street crossing. Street-view images are usually captured from a car, so the perspective is from the middle of the road. As a pedestrian, however, your view would be from the sidewalk. Although both perspectives show the same scene, they look quite different.
 
