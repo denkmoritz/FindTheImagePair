@@ -31,12 +31,6 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-To run the Backend:
-
-```bash
-uvicorn main:app --host 0.0.0.0 --reload
-```
-
 ### Set up the Frontend
 
 ```bash

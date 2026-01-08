@@ -46,15 +46,15 @@ class Variables:
     BBOX_EAST = float(os.getenv("BBOX_EAST", "-46.4"))
     BBOX_NORTH = float(os.getenv("BBOX_NORTH", "-23.3"))
 
-# ============ DATABASE ============
+# DATABASE
 class Config:
     DB_HOST = os.getenv("DB_HOST", "localhost")
     DB_NAME = os.getenv("DB_NAME", "gis")
-    DB_USER = os.getenv("DB_USER", "moritz")
-    DB_PASSWORD = os.getenv("DB_PASSWORD", "3004")
-    DB_PORT = int(os.getenv("DB_PORT", "25432"))
+    DB_USER = os.getenv("DB_USER", "postgres")
+    DB_PASSWORD = os.getenv("DB_PASSWORD", "postgres")
+    DB_PORT = int(os.getenv("DB_PORT", "25433"))
 
-# ============ DIRECTORIES ============
+# DIRECTORIES
 class Directories:
     # Main city directory (use CITY_TABLE to avoid spaces)
     CITY_DIR = Path(Variables.CITY_NORMAL)
