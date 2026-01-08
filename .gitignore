@@ -61,9 +61,22 @@ pnpm-debug.log*
 
 .env
 
+# Backend
 backend/images/
 backend/queries/
 backend/liked.db
 backend/latest_query.pkl
 backend/available_tables_cities.csv
 backend/.env
+
+# Table creator
+
+table_creator/sao_paulo/
+table_creator/berlin/
+table_creator/cape_town/
+table_creator/washington/
+table_creator/taipei/
+table_creator/sydney/
+table_creator/.env
+table_creator/venv/
+table_creator/delete.log
