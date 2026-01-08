@@ -32,6 +32,12 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+### Setup Images
+
+1. Download the `images.zip` file
+2. Place it in the `backend/` directory
+3. Unzip the file
+
 ### Set up the Frontend
 
 ```bash

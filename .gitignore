@@ -80,3 +80,5 @@ table_creator/sydney/
 table_creator/.env
 table_creator/venv/
 table_creator/delete.log
+
+images.zip
