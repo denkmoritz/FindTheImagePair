@@ -60,3 +60,9 @@ yarn-error.log*
 pnpm-debug.log*
 
 .env
+
+backend/images/
+backend/queries/
+backend/liked.db
+backend/latest_query.pkl
+backend/available_tables_cities.csv
