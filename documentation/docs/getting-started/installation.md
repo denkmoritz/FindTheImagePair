@@ -27,16 +27,18 @@ touch .env # MAPILLARY_TOKEN=<YOUR_API_KEY>
 
 ```bash
 cd backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
 ```
-
-### Setup Images
+#### Setup Images
 
 1. Download the `images.zip` file
 2. Place it in the `backend/` directory
 3. Unzip the file
+
+#### Docker Compose
+
+```bash
+docker compose up -d
+```
 
 ### Set up the Frontend
 
@@ -49,18 +51,4 @@ To run the Frontend:
 
 ```bash
 npm run dev
-```
-
-## Pull the PostgreSQL DB from Docker
-
-```bash
-docker pull moritzdenk/postgis-global-streetscapes:latest
-```
-
-```bash
-docker run -d \
-  --name postgis-global-streetscapes \
-  -p 25433:5432 \
-  -e POSTGRES_PASSWORD=postgres \
-  moritzdenk/postgis-global-streetscapes:latest
 ```
