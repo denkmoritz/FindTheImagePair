@@ -1,0 +1,27 @@
+services:
+  db:
+    image: moritzdenk/postgis-global-streetscapes:latest
+    container_name: postgis
+    ports:
+      - "25433:5432"
+    environment:
+      DB_NAME: gis
+      POSTGRES_DB: gis
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+  backend:
+    build: .
+    container_name: backend
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./images:/app/images
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: gis
+      DB_USER: postgres
+      DB_PASSWORD: postgres

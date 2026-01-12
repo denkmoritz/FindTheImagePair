@@ -11,7 +11,7 @@ URL_FIELD = "thumb_original_url"
 load_dotenv()
 TOKEN = os.getenv("MAPILLARY_TOKEN")
 if not TOKEN:
-    raise RuntimeError("MAPILLARY_TOKEN not set. Put MAPILLARY_TOKEN=MLY|... in your env or .env")
+    print("MAPILLARY_TOKEN not set – Mapillary features disabled.")
 
 def _local_path(dest_name: str, city: str) -> Path:
     """Save as images/{city}/{uuid}.jpg"""
