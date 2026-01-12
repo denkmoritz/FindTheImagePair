@@ -16,14 +16,14 @@ https://github.com/denkmoritz/FindTheImagePair.git
 cd FindTheImagePair
 ```
 
-Add your [Mapillary API](https://www.mapillary.com/developer/api-documentation) key:
+Add your [Mapillary API](https://www.mapillary.com/developer/api-documentation) key (not necessary):
 
 ```bash
 # in the image_finder dir
 touch .env # MAPILLARY_TOKEN=<YOUR_API_KEY>
 ```
 
-### Set up the Backend (Used Python3.11)
+### Set up the Backend
 
 ```bash
 cd backend
