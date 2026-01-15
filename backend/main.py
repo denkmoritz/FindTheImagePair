@@ -83,12 +83,9 @@ async def get_available_cities():
         )
 
 @app.post("/plot-slice/")
-async def plot(data: PlotRequest):
-    if data.inner_buffer >= data.outer_buffer:
-        raise HTTPException(status_code=400, detail="Outer Ring must be greater than Inner Ring.")
-    else:
-        image = plot_slice(data.inner_buffer, data.outer_buffer)
-        return JSONResponse(content={"image": f"data:image/png;base64,{image}"})
+async def plot(data: PlotBufferRequest):
+    image = plot_slice(data.inner_buffer, data.outer_buffer)
+    return JSONResponse(content={"image": f"data:image/png;base64,{image}"})
 
 @app.post("/query/")
 async def query(data: PlotRequest):

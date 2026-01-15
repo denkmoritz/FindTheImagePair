@@ -47,3 +47,14 @@ class DownloadRequest(BaseModel):
 
 class LikeExportRequest(PlotRequest):
     likes: List[Dict]
+
+
+class PlotBufferRequest(BaseModel):
+    inner_buffer: float = Field(..., ge=0)
+    outer_buffer: float = Field(..., ge=0)
+    
+    @model_validator(mode="after")
+    def _normalize_range(self):
+        if self.inner_buffer > self.outer_buffer:
+            self.inner_buffer, self.outer_buffer = self.outer_buffer, self.inner_buffer
+        return self
